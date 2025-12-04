@@ -25,4 +25,4 @@ The game will keep level up as each level is complete, and set highscore will be
   * Hooman Manesh -> Developer
   * Nathan Morales -> Developer
   * Chris Lepe Tenorio -> Developer
-  *
+  * Cameron Croom -> Developer
