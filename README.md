@@ -22,7 +22,7 @@ The game will keep level up as each level is complete, and set highscore will be
 
 # Credits:
 
-  * Hooman Manesh ->
-  * Nathan Morales
-  * Chris Lepe Tenorio
+  * Hooman Manesh -> Developer
+  * Nathan Morales -> Developer
+  * Chris Lepe Tenorio -> Developer
   *
