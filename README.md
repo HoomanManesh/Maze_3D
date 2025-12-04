@@ -1,13 +1,7 @@
-# Maze_3D
-A 3D game where you have to guide the ball through out, a maze , by moving around your mouse,to get the ball out of the box.
----
+# a-MAZE-ing 3D
+A 3D game where you have tilt the ball out of a maze! 
 
-# Credits:
-
-  * Hooman Manesh ->
-  * Nathan Morales
-  * Chris Lepe Tenorio
-  *
+The game will keep level up as each level is complete, and set highscore will be shown.
 
 ---
 
@@ -22,3 +16,13 @@ A 3D game where you have to guide the ball through out, a maze , by moving aroun
 * All developers design one level to their liking, which can be used for every level. 
 * We plan to divide the workload into equal sections among each member.
 * The same goes for assets and art of the game.
+
+  ---
+
+
+# Credits:
+
+  * Hooman Manesh ->
+  * Nathan Morales
+  * Chris Lepe Tenorio
+  *
