@@ -460,6 +460,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardController
   rotationSpeed: 50
   maxRotation: 10
+  useCameraControl: 0
+  controlCamera: {fileID: 0}
+  cameraTiltMultiplier: 1
+  smoothSpeed: 8
 --- !u!1 &424381579
 GameObject:
   m_ObjectHideFlags: 0
