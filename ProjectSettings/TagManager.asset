@@ -3,15 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-<<<<<<< HEAD
-  - Wall
-=======
-  - MazeFloor
-  - MazeWall
-  - Ball
-  - FinishPoint
->>>>>>> e4d97da382d89953f6fcc2aa403bff18bab612be
+  tags: []
   layers:
   - Default
   - TransparentFX
