@@ -23,6 +23,7 @@ public class FinishLine : MonoBehaviour
                 mazeController.enabled = false;
 
             // Load next scene
+            SceneManager.LoadScene("HoomanScene");
         }
     }
 }
