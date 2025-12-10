@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 40168575}
   - component: {fileID: 40168574}
   - component: {fileID: 40168573}
+  - component: {fileID: 40168576}
   m_Layer: 0
   m_Name: FinishLine
   m_TagString: FinishPoint
@@ -368,6 +369,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40168571}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &40168576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40168571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27b31d7cc3b93ce4c84752a7a1f33713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FinishZone
+  ballTag: Ball
 --- !u!1 &134703858
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,13 +587,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardController
   rotationSpeed: 50
   maxRotation: 10
-  backgroundMusicSource: {fileID: 0}
-  sfxSource: {fileID: 0}
-  musicVolume: 0.7
-  sfxVolume: 0.5
-  tiltSoundEffect: {fileID: 0}
-  playTiltSound: 0
-  tiltSoundCooldown: 0.2
 --- !u!1 &424381579
 GameObject:
   m_ObjectHideFlags: 0
@@ -3075,6 +3082,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3062446973851738397, guid: 65633c7ca4e996b41acf1e54a4c15845, type: 3}
       propertyPath: m_Name
+      value: Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062446973851738397, guid: 65633c7ca4e996b41acf1e54a4c15845, type: 3}
+      propertyPath: m_TagString
       value: Ball
       objectReference: {fileID: 0}
     - target: {fileID: 6713728251975593334, guid: 65633c7ca4e996b41acf1e54a4c15845, type: 3}

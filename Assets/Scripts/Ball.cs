@@ -21,12 +21,12 @@ public class BallControl : MonoBehaviour
     private void OnTriggerEnter(Collider other)  // Detect trigger collisions
     {
         Debug.Log("Triggered with: " + other.gameObject.tag);
-        if (other.gameObject.CompareTag("FinishPoint")) // Check for FinishPoint tag
-        {
-            rb.isKinematic = true; // Stop ball movement
-            transform.position = respawnPoint.position; // Move ball to respawn point
-            rb.isKinematic = false; 
-    }
+    //     //if (other.gameObject.CompareTag("FinishPoint")) // Check for FinishPoint tag
+    //     {
+    //         rb.isKinematic = true; // Stop ball movement
+    //         transform.position = respawnPoint.position; // Move ball to respawn point
+    //         rb.isKinematic = false; 
+    // }
 
 }
 }
