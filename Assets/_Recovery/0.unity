@@ -3151,7 +3151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 672f5460c9b7748a796ca80a7b906946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FinishLine
-  mazeController: {fileID: 248959982}
+  nextSceneName: 
+  rb: {fileID: 1439464826}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
