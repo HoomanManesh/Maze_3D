@@ -6,11 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/Hooman Manesh/HoomanScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Chris Lepe Tenorio/Maze_1.unity
     guid: 1c42a4198f51441a08c7102fb17ade91
+=======
+    path: Assets/Scenes/Hooman Manesh/Welcome.unity
+    guid: 88f94d759ceba8c46a647d36063eaba9
+  - enabled: 1
+    path: Assets/Scenes/Hooman Manesh/Maze_3.unity
+    guid: 25b3f62e827e1c54493f029a62431809
+  - enabled: 1
+    path: Assets/Scenes/Maze_1.unity
+    guid: 6c5d169880373469fb644b91f97a5547
+>>>>>>> e4d97da382d89953f6fcc2aa403bff18bab612be
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   m_UseUCBPForAssetBundles: 0
