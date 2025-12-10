@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class FinishLine : MonoBehaviour
+public class FinishLine1 : MonoBehaviour
 {
-    public BoardController mazeController;  
+    public BoardController mazeControllerScript;  
 
     private void OnTriggerEnter(Collider other)
     {
@@ -19,8 +19,8 @@ public class FinishLine : MonoBehaviour
             }
 
             // Freeze maze movement
-            if (mazeController != null)
-                mazeController.enabled = false;
+            if (mazeControllerScript != null)
+                mazeControllerScript.enabled = false;
 
         
         }

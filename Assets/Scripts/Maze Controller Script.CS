@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoardController : MonoBehaviour
+public class MazeControllerScript : MonoBehaviour
 {
     public float rotationSpeed = 50f; // Speed of board rotation
     public float maxRotation = 10f; // Maximum tilt angle

@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 175823265}
   m_Layer: 0
   m_Name: Ball (1)
-  m_TagString: Ball
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -532,7 +532,7 @@ SphereCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.5
@@ -1434,15 +1434,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 790307364}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f6f0f99b2fe346489f3a5cf4fe8803c, type: 3}
+  m_Script: {fileID: 11500000, guid: 951287293d08b44dd81b4c089035d743, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardController
   rotationSpeed: 50
   maxRotation: 10
-  useCameraControl: 0
-  controlCamera: {fileID: 0}
-  cameraTiltMultiplier: 1
-  smoothSpeed: 8
 --- !u!1 &797579114
 GameObject:
   m_ObjectHideFlags: 0
