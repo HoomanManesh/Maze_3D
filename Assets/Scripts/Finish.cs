@@ -14,13 +14,13 @@ public class FinishZone : MonoBehaviour
             }
         }
 
-         if (other.CompareTag(ballTag))
-        {
-            UI timer = FindObjectOfType<UI>();
-            if (timer != null)
-            {
-                timer.StopTimer();
-            }
-        }
+        //  if (other.CompareTag(ballTag))
+        // {
+        //     UI timer = FindObjectOfType<UI>();
+        //     if (timer != null)
+        //     {
+        //         timer.StopTimer();
+        //     }
+        // }
     }
 }
