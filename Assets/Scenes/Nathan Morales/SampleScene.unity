@@ -2259,7 +2259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardController
   rotationSpeed: 50
-  maxRotation: 500
+  maxRotation: 10
 --- !u!1 &1705769338
 GameObject:
   m_ObjectHideFlags: 0
