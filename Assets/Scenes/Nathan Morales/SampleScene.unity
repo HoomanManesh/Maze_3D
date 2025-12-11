@@ -911,7 +911,7 @@ GameObject:
   - component: {fileID: 568010871}
   m_Layer: 0
   m_Name: Finish Area
-  m_TagString: FinishZone
+  m_TagString: FinishPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -925,8 +925,8 @@ Transform:
   m_GameObject: {fileID: 568010866}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.35, y: -0.7, z: -10.64}
-  m_LocalScale: {x: 3.4798257, y: 1, z: 1.1331263}
+  m_LocalPosition: {x: 8.35, y: 0.6489, z: -10.64}
+  m_LocalScale: {x: 3.4798257, y: 2.7524817, z: 1.1331263}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1576527172}
@@ -950,8 +950,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.5630193, z: 2.0191941}
+  m_Center: {x: 0, y: 0.28150964, z: 0.5095984}
 --- !u!23 &568010869
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -977,7 +977,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e959ed8042b8f274e922ddb01237d559, type: 2}
+  - {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1017,10 +1017,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 568010866}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c19331aa449e44340bc1e69a4334173d, type: 3}
+  m_Script: {fileID: 11500000, guid: 27b31d7cc3b93ce4c84752a7a1f33713, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FinishLine
-  mazeController: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::FinishZone
+  ballTag: Ball
 --- !u!1 &656950078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1777,6 +1777,7 @@ GameObject:
   - component: {fileID: 1564085044}
   - component: {fileID: 1564085043}
   - component: {fileID: 1564085042}
+  - component: {fileID: 1564085045}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -1877,6 +1878,33 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564085040}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1564085045
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564085040}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1576527171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1938,11 +1966,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1576527171}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97aebab767d4689429955bde4512c695, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f6f0f99b2fe346489f3a5cf4fe8803c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardController
+  m_EditorClassIdentifier: Assembly-CSharp::MazeControllerScript
   rotationSpeed: 50
-  maxRotation: 500
+  maxRotation: 10
 --- !u!1 &1705769338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2178,27 +2206,14 @@ GameObject:
   - component: {fileID: 1892441933}
   - component: {fileID: 1892441932}
   - component: {fileID: 1892441931}
-  - component: {fileID: 1892441930}
+  - component: {fileID: 1892441936}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Player
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1892441930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1892441929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90a58b76b2e760142afc2e0e1cf50074, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  speed: 1
 --- !u!54 &1892441931
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2318,6 +2333,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1892441936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892441929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c54f804a85bf4b4c8d3df08c5925e4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BallControl
+  respawnPoint: {fileID: 0}
 --- !u!1 &1944462206
 GameObject:
   m_ObjectHideFlags: 0

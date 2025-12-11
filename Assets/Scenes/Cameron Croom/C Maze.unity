@@ -465,27 +465,14 @@ GameObject:
   - component: {fileID: 175823268}
   - component: {fileID: 175823267}
   - component: {fileID: 175823266}
-  - component: {fileID: 175823265}
   - component: {fileID: 175823271}
   m_Layer: 0
   m_Name: Ball (1)
-  m_TagString: Player
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &175823265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 175823264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6205545d98eee4dc0a0e73225f0fb100, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CollisionSound
 --- !u!54 &175823266
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1796,7 +1783,7 @@ GameObject:
   - component: {fileID: 987597191}
   m_Layer: 0
   m_Name: TriggerFinish
-  m_TagString: FinishZone
+  m_TagString: FinishPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1810,8 +1797,8 @@ Transform:
   m_GameObject: {fileID: 987597186}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2, y: 0.39, z: 5.83}
-  m_LocalScale: {x: 2, y: 0.3, z: 2}
+  m_LocalPosition: {x: 10.43, y: 0.7007, z: 8.63}
+  m_LocalScale: {x: 2, y: 1.3690748, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 790307365}
@@ -1862,7 +1849,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c7e169d1f81961648bab023f3c69af99, type: 2}
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2407,8 +2394,8 @@ Transform:
   m_GameObject: {fileID: 1295202089}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 10, y: 0.5, z: 0.2}
-  m_LocalScale: {x: 19.5, y: 1, z: 0.2}
+  m_LocalPosition: {x: 10, y: 0.5, z: -0.7656}
+  m_LocalScale: {x: 17.56841, y: 1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 790307365}
