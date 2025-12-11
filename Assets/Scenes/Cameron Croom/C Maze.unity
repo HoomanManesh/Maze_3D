@@ -466,6 +466,7 @@ GameObject:
   - component: {fileID: 175823267}
   - component: {fileID: 175823266}
   - component: {fileID: 175823265}
+  - component: {fileID: 175823271}
   m_Layer: 0
   m_Name: Ball (1)
   m_TagString: Player
@@ -485,10 +486,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6205545d98eee4dc0a0e73225f0fb100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollisionSound
-  rollingSource: {fileID: 2003277942}
-  collisionClip: {fileID: 8300000, guid: 20c65306c5a404f43a9e84fd838d9025, type: 3}
-  rb: {fileID: 175823266}
-  speedThreshold: 0.1
 --- !u!54 &175823266
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -609,6 +606,19 @@ Transform:
   - {fileID: 2003277943}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &175823271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175823264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c54f804a85bf4b4c8d3df08c5925e4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BallControl
+  respawnPoint: {fileID: 0}
 --- !u!1 &195824881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1434,9 +1444,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 790307364}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 951287293d08b44dd81b4c089035d743, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f6f0f99b2fe346489f3a5cf4fe8803c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardController
+  m_EditorClassIdentifier: Assembly-CSharp::MazeControllerScript
   rotationSpeed: 50
   maxRotation: 10
 --- !u!1 &797579114
@@ -1893,10 +1903,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 987597186}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 672f5460c9b7748a796ca80a7b906946, type: 3}
+  m_Script: {fileID: 11500000, guid: 27b31d7cc3b93ce4c84752a7a1f33713, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FinishLine
-  mazeController: {fileID: 790307366}
+  m_EditorClassIdentifier: Assembly-CSharp::FinishZone
+  ballTag: Ball
 --- !u!1 &1087580921
 GameObject:
   m_ObjectHideFlags: 0
@@ -2131,6 +2141,7 @@ GameObject:
   - component: {fileID: 1154495636}
   - component: {fileID: 1154495635}
   - component: {fileID: 1154495634}
+  - component: {fileID: 1154495637}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -2231,6 +2242,33 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154495632}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1154495637
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154495632}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1240471860
 GameObject:
   m_ObjectHideFlags: 0
