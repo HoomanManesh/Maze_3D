@@ -13,5 +13,14 @@ public class FinishZone : MonoBehaviour
                 GameManager.Instance.LoadRandomMaze(); // Load a new random maze
             }
         }
+
+         if (other.CompareTag(ballTag))
+        {
+            UI timer = FindObjectOfType<UI>();
+            if (timer != null)
+            {
+                timer.StopTimer();
+            }
+        }
     }
 }
