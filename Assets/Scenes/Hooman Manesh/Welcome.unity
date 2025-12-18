@@ -687,7 +687,6 @@ MonoBehaviour:
   - Maze_3
   - Maze_1
   - C Maze
-  - SampleScene
 --- !u!82 &1121779715
 AudioSource:
   m_ObjectHideFlags: 0
