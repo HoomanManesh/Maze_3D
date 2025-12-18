@@ -9,32 +9,28 @@ public class GameManager : MonoBehaviour
     public Rigidbody ballPrefab;        // drag Ball prefab
     public string[] mazeSceneNames;     // e.g. "Maze_1", "Maze_2", ...
 
-    private Rigidbody currentBall; // reference to the current ball instance
+    private Rigidbody currentBall;
 
-    private void Awake() // Singleton pattern
+    private void Awake()
     {
-        if (Instance != null && Instance != this) // Ensure only one instance exists
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
 
-        Instance = this; // Set the instance
-        DontDestroyOnLoad(gameObject); // Persist across scenes
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
-
-// Spawn the ball at a given position and rotation
     public void SpawnBallAt(Vector3 position, Quaternion rotation)
     {
         if (currentBall != null)
-            Destroy(currentBall.gameObject); // Remove existing ball
+            Destroy(currentBall.gameObject);
 
-        currentBall = Instantiate(ballPrefab, position, rotation); // Create new ball
+        currentBall = Instantiate(ballPrefab, position, rotation);
     }
 
-
-// Load a random maze scene from the list
     public void LoadRandomMaze()
     {
         if (mazeSceneNames == null || mazeSceneNames.Length == 0)
@@ -43,13 +39,11 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        int index = Random.Range(0, mazeSceneNames.Length); // Pick a random index
+        int index = Random.Range(0, mazeSceneNames.Length);
         string sceneName = mazeSceneNames[index];
-        SceneManager.LoadScene(sceneName); // Load the selected scene
+        SceneManager.LoadScene(sceneName);
     }
 
-
-// Load the first maze scene in the list
     public void LoadFirstMaze(string sceneName)
     {
         SceneManager.LoadScene(sceneName);

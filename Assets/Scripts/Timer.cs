@@ -1,17 +1,13 @@
 using UnityEngine;
 using TMPro;
 
-
-// UI class to manage the timer display
 public class UI : MonoBehaviour
 {
     public TextMeshProUGUI timerText;
 
-    private float elapsedTime = 0f; // Time in seconds
-    private bool isRunning = false; // Is the timer active
-    private bool hasStarted = false; // Has the timer started at least once
-
-
+    private float elapsedTime = 0f;
+    private bool isRunning = false;
+    private bool hasStarted = false;
 
     void Start()
     {
@@ -20,11 +16,6 @@ public class UI : MonoBehaviour
         hasStarted = false;
         UpdateTimerUI();
     }
-
-
-// Update is called once per frame
-// Start the timer on first key press and update time while running
-
 
     void Update()
     {
@@ -43,9 +34,6 @@ public class UI : MonoBehaviour
         }
     }
 
-
-// Update the timer UI text
-// Format: MM:SS.ms
     void UpdateTimerUI()
     {
         int minutes = Mathf.FloorToInt(elapsedTime / 60f);
@@ -61,8 +49,6 @@ public class UI : MonoBehaviour
         isRunning = false;
     }
 
-
-// Get the elapsed time in seconds
     public float GetElapsedTime()
     {
         return elapsedTime;

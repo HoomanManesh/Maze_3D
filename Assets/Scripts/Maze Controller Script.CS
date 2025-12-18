@@ -2,15 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 public class MazeControllerScript : MonoBehaviour
 {
     public float rotationSpeed = 50f; // Speed of board rotation
     public float maxRotation = 10f; // Maximum tilt angle
 
-// Update is called once per frame
-// Handle board rotation based on user input
     void Update()
     {   // Get input for rotation
         float rotationX = Input.GetAxis("Vertical") * rotationSpeed * Time.deltaTime;
